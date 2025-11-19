@@ -30,7 +30,7 @@ const Gallery: React.FC<GalleryProps> = ({ gallery, productName = "" }) => {
   if (!gallery || gallery.length === 0) return null;
 
   // Map gallery ke array URL full
- const BASE_URL = "https://cornwall-journals-eddie-decor.trycloudflare.com";
+ const BASE_URL = " https://logged-dolls-souls-abstracts.trycloudflare.com";
 
 const galleryUrls = gallery.map(
   (item) => `${BASE_URL}${item.url}`
