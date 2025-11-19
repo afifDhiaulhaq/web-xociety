@@ -38,7 +38,7 @@ export default function Header() {
 
     async function fetchContact() {
       try {
-        const res = await fetch("http://localhost:1337/api/contact?populate=*");
+        const res = await fetch("https://cornwall-journals-eddie-decor.trycloudflare.com/api/contact?populate=*");
         const json = await res.json();
 
         console.log("Strapi response:", json);

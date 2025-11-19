@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { slug } = await params;
 
     const res = await fetch(
-        `http://localhost:1337/api/articles?filters[slug][$eq]=${slug}&populate=*`,
+        `https://cornwall-journals-eddie-decor.trycloudflare.com/api/articles?filters[slug][$eq]=${slug}&populate=*`,
         { cache: "no-store" }
     );
 
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const data = json?.data?.[0];
     if (!data) return { title: "Article Not Found" };
 
-    const imageUrl = data.image?.url ? `http://localhost:1337${data.image.url}` : undefined;
+    const imageUrl = data.image?.url ? `https://cornwall-journals-eddie-decor.trycloudflare.com${data.image.url}` : undefined;
     const description = markdownToDescription(data.bodyArticle, 160);
 
 
@@ -68,7 +68,7 @@ export default async function ArticlePage({ params }: Props) {
     const { slug } = await params;
 
     const res = await fetch(
-        `http://localhost:1337/api/articles?filters[slug][$eq]=${slug}&populate=*`,
+        `https://cornwall-journals-eddie-decor.trycloudflare.com/api/articles?filters[slug][$eq]=${slug}&populate=*`,
         { cache: "no-store" }
     );
 
@@ -125,7 +125,7 @@ export default async function ArticlePage({ params }: Props) {
             {article.image?.url ? (
             <img
             alt={article.tittle || "Article Image"}
-            src={`http://localhost:1337${article.image.url}`}
+            src={`https://cornwall-journals-eddie-decor.trycloudflare.com${article.image.url}`}
                 className="absolute inset-0 w-full h-full object-cover"
             />
             ) : (

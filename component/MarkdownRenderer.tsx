@@ -51,7 +51,7 @@ export default function MarkdownRenderer({ content }: Props) {
 
                         const finalSrc = src.startsWith("http")
                             ? src
-                            : `http://localhost:1337${src}`;
+                            : `https://cornwall-journals-eddie-decor.trycloudflare.com${src}`;
 
                         return (
                             <img

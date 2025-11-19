@@ -19,7 +19,7 @@ export default function Banner() {
   useEffect(() => {
     const fetchBanner = async () => {
       try {
-        const res = await fetch("http://localhost:1337/api/banners?populate=*");
+        const res = await fetch("https://cornwall-journals-eddie-decor.trycloudflare.com/api/banners?populate=*");
         const json = await res.json();
         console.log("Banner API response:", json);
 
@@ -29,7 +29,7 @@ export default function Banner() {
             const description = item.description || "No Description";
 
             const mediaUrl = item.media?.url
-              ? `http://localhost:1337${item.media.url}`
+              ? `https://cornwall-journals-eddie-decor.trycloudflare.com${item.media.url}`
               : undefined;
 
             return {

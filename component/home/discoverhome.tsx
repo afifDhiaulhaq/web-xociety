@@ -19,7 +19,7 @@ export default function DiscoverHome() {
 
   useEffect(() => {
     const fetchDiscover = async () => {
-      const baseUrl = "http://localhost:1337";
+      const baseUrl = "https://cornwall-journals-eddie-decor.trycloudflare.com";
       try {
         const res = await fetch(`${baseUrl}/api/discover?populate=*`);
         const json = await res.json();

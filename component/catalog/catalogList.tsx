@@ -44,7 +44,7 @@ export default function Catalog({ products }: { products: ProductItem[] }) {
                 {product.imageCatalog?.url ? (
                   <img
                     alt={product.tittle}
-                    src={`http://localhost:1337${product.imageCatalog.url}`}
+                    src={`https://cornwall-journals-eddie-decor.trycloudflare.com${product.imageCatalog.url}`}
                     className="w-full h-full object-cover rounded-2xl aspect-square group-hover:scale-105 transition-transform duration-500"
                   />
                 ) : (
