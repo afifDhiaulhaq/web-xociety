@@ -19,7 +19,7 @@ export default function Banner() {
   useEffect(() => {
     const fetchBanner = async () => {
       try {
-        const res = await fetch(" https://logged-dolls-souls-abstracts.trycloudflare.com/api/banners?populate=*");
+        const res = await fetch("https://reminder-resulting-conservative-dubai.trycloudflare.com/api/banners?populate=*");
         const json = await res.json();
         console.log("Banner API response:", json);
 
@@ -29,7 +29,7 @@ export default function Banner() {
             const description = item.description || "No Description";
 
             const mediaUrl = item.media?.url
-              ? ` https://logged-dolls-souls-abstracts.trycloudflare.com${item.media.url}`
+              ? `https://reminder-resulting-conservative-dubai.trycloudflare.com${item.media.url}`
               : undefined;
 
             return {

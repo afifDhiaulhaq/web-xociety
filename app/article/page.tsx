@@ -6,7 +6,7 @@ import ArticleList from "@/component/article/ArticleList";
 // SERVER FETCH
 async function getArticles(): Promise<ArticleItem[]> {
     const res = await fetch(
-        " https://logged-dolls-souls-abstracts.trycloudflare.com/api/articles?sort[0]=createdAt:desc&populate=*",
+        "https://reminder-resulting-conservative-dubai.trycloudflare.com/api/articles?sort[0]=createdAt:desc&populate=*",
         { cache: "no-store" }
     );
 

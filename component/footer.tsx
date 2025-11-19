@@ -21,7 +21,7 @@ export default function Footer() {
   useEffect(() => {
   async function fetchContact() {
     try {
-      const res = await fetch(" https://logged-dolls-souls-abstracts.trycloudflare.com/api/contact?populate=*");
+      const res = await fetch("https://reminder-resulting-conservative-dubai.trycloudflare.com/api/contact?populate=*");
       const json = await res.json();
 
       console.log("Strapi response:", json);

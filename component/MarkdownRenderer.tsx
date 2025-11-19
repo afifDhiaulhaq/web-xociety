@@ -51,7 +51,7 @@ export default function MarkdownRenderer({ content }: Props) {
 
                         const finalSrc = src.startsWith("http")
                             ? src
-                            : ` https://logged-dolls-souls-abstracts.trycloudflare.com${src}`;
+                            : `https://reminder-resulting-conservative-dubai.trycloudflare.com${src}`;
 
                         return (
                             <img

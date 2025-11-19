@@ -14,7 +14,7 @@ export default function AboutHome() {
   useEffect(() => {
     const fetchAboutHome = async () => {
       try {
-        const res = await fetch(" https://logged-dolls-souls-abstracts.trycloudflare.com/api/about-home?populate=image");
+        const res = await fetch("https://reminder-resulting-conservative-dubai.trycloudflare.com/api/about-home?populate=image");
         const json = await res.json();
 
         console.log("Strapi response:", json);
@@ -69,7 +69,7 @@ export default function AboutHome() {
               <img
                 alt={data.tittle}
                 className="w-full h-auto object-cover rounded-lg"
-                src={` https://logged-dolls-souls-abstracts.trycloudflare.com${data.image.url}`}
+                src={`https://reminder-resulting-conservative-dubai.trycloudflare.com${data.image.url}`}
               />
             </div>
           ) : (
