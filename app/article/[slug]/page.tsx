@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { slug } = await params;
 
     const res = await fetch(
-        `https://reminder-resulting-conservative-dubai.trycloudflare.com/api/articles?filters[slug][$eq]=${slug}&populate=*`,
+        `https://deemed-preliminary-checked-roulette.trycloudflare.com/api/articles?filters[slug][$eq]=${slug}&populate=*`,
         { cache: "no-store" }
     );
 
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const data = json?.data?.[0];
     if (!data) return { title: "Article Not Found" };
 
-    const imageUrl = data.image?.url ? `https://reminder-resulting-conservative-dubai.trycloudflare.com${data.image.url}` : undefined;
+    const imageUrl = data.image?.url ? `https://deemed-preliminary-checked-roulette.trycloudflare.com${data.image.url}` : undefined;
     const description = markdownToDescription(data.bodyArticle, 160);
 
 
@@ -68,7 +68,7 @@ export default async function ArticlePage({ params }: Props) {
     const { slug } = await params;
 
     const res = await fetch(
-        `https://reminder-resulting-conservative-dubai.trycloudflare.com/api/articles?filters[slug][$eq]=${slug}&populate=*`,
+        `https://deemed-preliminary-checked-roulette.trycloudflare.com/api/articles?filters[slug][$eq]=${slug}&populate=*`,
         { cache: "no-store" }
     );
 
@@ -125,7 +125,7 @@ export default async function ArticlePage({ params }: Props) {
             {article.image?.url ? (
             <img
             alt={article.tittle || "Article Image"}
-            src={`https://reminder-resulting-conservative-dubai.trycloudflare.com${article.image.url}`}
+            src={`https://deemed-preliminary-checked-roulette.trycloudflare.com${article.image.url}`}
                 className="absolute inset-0 w-full h-full object-cover"
             />
             ) : (

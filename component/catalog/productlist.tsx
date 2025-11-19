@@ -22,7 +22,7 @@ export default function ProductList() {
         async function fetchProducts() {
           try {
             const res = await fetch(
-              "https://reminder-resulting-conservative-dubai.trycloudflare.com/api/products-lists?sort[0]=createdAt:desc&populate=*"
+              "https://deemed-preliminary-checked-roulette.trycloudflare.com/api/products-lists?sort[0]=createdAt:desc&populate=*"
             );
             const json = await res.json();
             console.log("Strapi response:", json);
@@ -96,7 +96,7 @@ export default function ProductList() {
                 <>
                   <img
                     alt={product.tittle}
-                    src={`https://reminder-resulting-conservative-dubai.trycloudflare.com${product.imageCatalog.url}`}
+                    src={`https://deemed-preliminary-checked-roulette.trycloudflare.com${product.imageCatalog.url}`}
                     className="w-full h-auto object-cover rounded-2xl aspect-square"
                   />
 

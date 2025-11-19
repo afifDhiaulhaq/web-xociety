@@ -44,7 +44,7 @@ export default function Catalog({ products }: { products: ProductItem[] }) {
                 {product.imageCatalog?.url ? (
                   <img
                     alt={product.tittle}
-                    src={`https://reminder-resulting-conservative-dubai.trycloudflare.com${product.imageCatalog.url}`}
+                    src={`https://deemed-preliminary-checked-roulette.trycloudflare.com${product.imageCatalog.url}`}
                     className="w-full h-full object-cover rounded-2xl aspect-square group-hover:scale-105 transition-transform duration-500"
                   />
                 ) : (

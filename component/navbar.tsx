@@ -38,7 +38,7 @@ export default function Header() {
 
     async function fetchContact() {
       try {
-        const res = await fetch("https://reminder-resulting-conservative-dubai.trycloudflare.com/api/contact?populate=*");
+        const res = await fetch("https://deemed-preliminary-checked-roulette.trycloudflare.com/api/contact?populate=*");
         const json = await res.json();
 
         console.log("Strapi response:", json);

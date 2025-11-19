@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
 
   const res = await fetch(
-    "https://reminder-resulting-conservative-dubai.trycloudflare.com/api/products-lists?sort[0]=createdAt:desc&populate=*",
+    "https://deemed-preliminary-checked-roulette.trycloudflare.com/api/products-lists?sort[0]=createdAt:desc&populate=*",
     { cache: "no-store" }
   );
 
@@ -85,7 +85,7 @@ export default async function ProductPage({ params }: Props) {
 
   // Fetch data by documentId
   const res = await fetch(
-    `https://reminder-resulting-conservative-dubai.trycloudflare.com/api/products-lists?filters[slug][$eq]=${slug}&populate=*`,
+    `https://deemed-preliminary-checked-roulette.trycloudflare.com/api/products-lists?filters[slug][$eq]=${slug}&populate=*`,
     { cache: "no-store" }
   );
 
@@ -156,7 +156,7 @@ export default async function ProductPage({ params }: Props) {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: product.background?.url
-            ? `url(https://reminder-resulting-conservative-dubai.trycloudflare.com${product.background.url})`
+            ? `url(https://deemed-preliminary-checked-roulette.trycloudflare.com${product.background.url})`
             : undefined,
         }}
       ></div>
@@ -174,7 +174,7 @@ export default async function ProductPage({ params }: Props) {
               <img
                 alt={product.tittle}
                 className="max-w-xs md:max-w-sm lg:max-w-md w-full object-contain"
-                src={`https://reminder-resulting-conservative-dubai.trycloudflare.com${product.image.url}`}
+                src={`https://deemed-preliminary-checked-roulette.trycloudflare.com${product.image.url}`}
               />
             ) : (
               <div className="w-full h-64 bg-gray-200 flex items-center justify-center rounded-lg">

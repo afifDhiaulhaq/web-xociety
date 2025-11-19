@@ -62,7 +62,7 @@ export default function ArticleList({ articles }: { articles: ArticleItem[] }) {
                     <div className="w-full h-70 lg:w-1/2 order-first lg:order-last">
                     <img
                         alt={article.tittle}
-                        src={`https://reminder-resulting-conservative-dubai.trycloudflare.com${article.image.url}`}
+                        src={`https://deemed-preliminary-checked-roulette.trycloudflare.com${article.image.url}`}
                         className="w-full h-full object-cover rounded-lg"
                     />
                     </div>

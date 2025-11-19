@@ -3,7 +3,7 @@ import { ProductItem } from "@/type/product";
 
 async function getProduct(): Promise<ProductItem[]>{
   const res = await fetch(
-    "https://reminder-resulting-conservative-dubai.trycloudflare.com/api/products-lists?sort[0]=createdAt:desc&populate=*",
+    "https://deemed-preliminary-checked-roulette.trycloudflare.com/api/products-lists?sort[0]=createdAt:desc&populate=*",
     { next: { revalidate: 60 } } // ISR → refresh setiap 60 detik
   );
   const json = await res.json();

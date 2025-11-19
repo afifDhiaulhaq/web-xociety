@@ -51,7 +51,7 @@ export default function MarkdownRenderer({ content }: Props) {
 
                         const finalSrc = src.startsWith("http")
                             ? src
-                            : `https://reminder-resulting-conservative-dubai.trycloudflare.com${src}`;
+                            : `https://deemed-preliminary-checked-roulette.trycloudflare.com${src}`;
 
                         return (
                             <img
